@@ -27,7 +27,7 @@ BUILD_STEPS = [
     ("Build manager spells",                   "src/clean/build_managers.py"),
     ("Parse Wikipedia managerial changes",     "src/clean/clean_wikipedia_managers.py"),
     ("Reconcile managers with Wikipedia",      "src/clean/reconcile_managers.py"),
-]
+    ("Build SQLite database",                  "src/load/build_database.py"),]
 
 
 def run(steps: list) -> None:

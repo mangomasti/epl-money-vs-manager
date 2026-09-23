@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Rebuilt by the pipeline from data/processed/
+data/epl.db
