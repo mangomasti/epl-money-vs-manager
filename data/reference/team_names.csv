@@ -1,36 +1,36 @@
-team,understat_name
-Arsenal,Arsenal
-Aston Villa,Aston Villa
-Bournemouth,Bournemouth
-Brentford,Brentford
-Brighton,Brighton
-Burnley,Burnley
-Cardiff,Cardiff
-Chelsea,Chelsea
-Crystal Palace,Crystal Palace
-Everton,Everton
-Fulham,Fulham
-Huddersfield,Huddersfield
-Hull,Hull
-Ipswich,Ipswich
-Leeds,Leeds
-Leicester,Leicester
-Liverpool,Liverpool
-Luton,Luton
-Man City,Manchester City
-Man United,Manchester United
-Middlesbrough,Middlesbrough
-Newcastle,Newcastle United
-Norwich,Norwich
-Nott'm Forest,Nottingham Forest
-QPR,Queens Park Rangers
-Sheffield United,Sheffield United
-Southampton,Southampton
-Stoke,Stoke
-Sunderland,Sunderland
-Swansea,Swansea
-Tottenham,Tottenham
-Watford,Watford
-West Brom,West Bromwich Albion
-West Ham,West Ham
-Wolves,Wolverhampton Wanderers
+team,understat_name,transfermarkt_name
+Arsenal,Arsenal,Arsenal FC
+Aston Villa,Aston Villa,Aston Villa
+Bournemouth,Bournemouth,AFC Bournemouth
+Brentford,Brentford,Brentford FC
+Brighton,Brighton,Brighton & Hove Albion
+Burnley,Burnley,Burnley FC
+Cardiff,Cardiff,Cardiff City
+Chelsea,Chelsea,Chelsea FC
+Crystal Palace,Crystal Palace,Crystal Palace
+Everton,Everton,Everton FC
+Fulham,Fulham,Fulham FC
+Huddersfield,Huddersfield,Huddersfield Town
+Hull,Hull,Hull City
+Ipswich,Ipswich,Ipswich Town
+Leeds,Leeds,Leeds United
+Leicester,Leicester,Leicester City
+Liverpool,Liverpool,Liverpool FC
+Luton,Luton,Luton Town
+Man City,Manchester City,Manchester City
+Man United,Manchester United,Manchester United
+Middlesbrough,Middlesbrough,Middlesbrough FC
+Newcastle,Newcastle United,Newcastle United
+Norwich,Norwich,Norwich City
+Nott'm Forest,Nottingham Forest,Nottingham Forest
+QPR,Queens Park Rangers,Queens Park Rangers
+Sheffield United,Sheffield United,Sheffield United
+Southampton,Southampton,Southampton FC
+Stoke,Stoke,Stoke City
+Sunderland,Sunderland,Sunderland AFC
+Swansea,Swansea,Swansea City
+Tottenham,Tottenham,Tottenham Hotspur
+Watford,Watford,Watford FC
+West Brom,West Bromwich Albion,West Bromwich Albion
+West Ham,West Ham,West Ham United
+Wolves,Wolverhampton Wanderers,Wolverhampton Wanderers
