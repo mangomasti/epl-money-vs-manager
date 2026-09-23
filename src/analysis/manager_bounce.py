@@ -10,7 +10,8 @@ Method: event study with matched controls
   3. Controls: any point in a season where a team kept one manager for WINDOW
      matches either side.
   4. Each event is compared with controls whose "before" PPG was within
-     MATCH_TOLERANCE of the event's (equally bad form, no change).
+     MATCH_TOLERANCE AND whose last-RECENT-match PPG was within RECENT_TOLERANCE
+     (equally bad form, including a similar recent slump, but no change).
   5. Effect = treated change - matched-control change, with a 95% CI.
 
 Outputs: reports/results/bounce_events.csv
@@ -32,6 +33,8 @@ FIGURES = Path("reports/figures")
 
 WINDOW = 10
 MATCH_TOLERANCE = 0.10
+RECENT = 3                  # also match on form over the last RECENT matches
+RECENT_TOLERANCE = 0.34     # within 1 point over those 3 matches
 TYPES = ["permanent", "caretaker", "caretaker_made_permanent"]
 METRICS = {
     "points": "Points per game",
@@ -82,7 +85,8 @@ def add_windows(p: pd.DataFrame) -> pd.DataFrame:
         roll = g[m].transform(lambda s: s.rolling(WINDOW).mean())
         p[f"{m}_before"] = roll.groupby(by).shift(1)
         p[f"{m}_after"] = roll.groupby(by).shift(-(WINDOW - 1))
-
+    recent = g["points"].transform(lambda s: s.rolling(RECENT).mean())
+    p["points_recent"] = recent.groupby(by).shift(1)          # PPG over the last RECENT matches before k
     p["spell_prev"] = g["spell_id"].shift(1)                  # spell of the previous match
     p["spell_window_start"] = g["spell_id"].shift(WINDOW)      # spell at k-W
     p["spell_window_end"] = g["spell_id"].shift(-(WINDOW - 1)) # spell at k+W-1
@@ -102,8 +106,10 @@ def paths(panel: pd.DataFrame, anchors: pd.DataFrame) -> pd.DataFrame:
 def match_controls(events, controls, control_paths):
     rows, event_ctrl_paths = [], []
     ctrl_before = controls["points_before"].to_numpy()
+    ctrl_recent = controls["points_recent"].to_numpy()
     for i, ev in events.iterrows():
-        mask = np.abs(ctrl_before - ev["points_before"]) <= MATCH_TOLERANCE
+        mask = ((np.abs(ctrl_before - ev["points_before"]) <= MATCH_TOLERANCE) &
+                (np.abs(ctrl_recent - ev["points_recent"]) <= RECENT_TOLERANCE))
         c = controls[mask]
         row = {"n_controls": int(mask.sum())}
         for m in METRICS:
@@ -144,6 +150,7 @@ def plot(treated_paths, control_paths, n_events) -> Path:
     ax.axvline(-0.5, color="grey", linestyle=":")
     ax.text(-0.3, ax.get_ylim()[1] * 0.97, "new manager's first match", fontsize=9, va="top")
     ax.set_xlabel("Matches relative to the change")
+    ax.set_xticks(range(-WINDOW, WINDOW, 2))
     ax.set_ylabel("Average points per match")
     ax.set_title("Premier League 2014/15–2025/26: the 'new manager bounce' vs. matched controls")
     ax.legend()
