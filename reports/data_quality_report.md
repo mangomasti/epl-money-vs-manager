@@ -62,3 +62,15 @@ Log of every data issue found, and how it was handled.
 **1,645 of 3,314 moves (50%) are real signings.** Loan returns and youth promotions are excluded from all signing analysis.
 
 **Known limits of the rules:** loans longer than 750 days would be classed as `free`; a permanent €0 move back to a former club within 750 days would be classed as `loan_return`. Both are expected to be rare.
+### Managers (from Transfermarkt `games`)
+
+`src/clean/build_managers.py` attaches each team's manager to every match and builds managerial spells.
+
+- **Third-source check:** all 4,560 matches joined to Transfermarkt; **4,560 / 4,560 scores agree** across football-data, Understat and Transfermarkt.
+
+| # | Issue | Evidence | Resolution |
+|---|-------|----------|------------|
+| 16 | Stand-in managers recorded as managerial changes | 6 runs of 1–3 matches with the same main manager on both sides, e.g. Stuivenberg for Arteta (Arsenal v Man City, 1 Jan 2022; Arteta had COVID) | Matches credited to the head coach; matchday manager kept; each spell records `stand_in_matches`. Removed 12 false changes |
+| 17 | Separate jobs merged across a relegation gap | Heckingbottom (Sheffield United): caretaker spell in 2020/21 merged with a permanent appointment made in the Championship, returning to the PL in 2023/24 | Known issue: to be resolved in the Wikipedia cross-check |
+
+**Result:** 210 spells, 140 managers, 175 managerial changes (127 mid-season, 48 between seasons). 41 spells of 5 matches or fewer (caretakers and very short permanent reigns) are kept, to be classified in the Wikipedia cross-check.
