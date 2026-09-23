@@ -74,3 +74,29 @@ Log of every data issue found, and how it was handled.
 | 17 | Separate jobs merged across a relegation gap | Heckingbottom (Sheffield United): caretaker spell in 2020/21 merged with a permanent appointment made in the Championship, returning to the PL in 2023/24 | Known issue: to be resolved in the Wikipedia cross-check |
 
 **Result:** 210 spells, 140 managers, 175 managerial changes (127 mid-season, 48 between seasons). 41 spells of 5 matches or fewer (caretakers and very short permanent reigns) are kept, to be classified in the Wikipedia cross-check.
+## Source 4: Wikipedia (managerial changes: cross-check)
+
+**Raw files:** each season's Premier League page, `data/raw/wikipedia/pl_*.html`, parsed by `src/clean/clean_wikipedia_managers.py`; reconciled with Transfermarkt by `src/clean/reconcile_managers.py`
+
+| # | Issue | Evidence | Resolution |
+|---|-------|----------|------------|
+| 18 | Header text split by line breaks | 2015–16 onwards: `Manner of<br/>departure`; HTML parsers treat these as two separate text pieces | `<br>` tags replaced with spaces before parsing |
+| 19 | Inconsistent departure wording | `End of interim spell` vs `End of caretaker spell`; `Signed by Tottenham` vs `Signed by Tottenham Hotspur` | Standardised into 7 categories; unknown wording would show as `other` |
+| 20 | Caretakers mostly omitted; promoted caretakers dated after their first match | Ljungberg absent (Emery → Arteta); Carver first match 1 Jan 2015, appointed 26 Jan | Unmatched short spells classed as caretakers; appointment allowed any time up to a spell's last match |
+| 21 | Name variants and joint caretakers | `Paddy McCarthy` = `Patrick McCarthy`; one cell lists "David Unsworth Joe Royle" | Manager alias table `data/reference/manager_aliases.csv`; name matched by containment after removing accents |
+| 22 | Managers hired outside the PL | 9 promoted-club managers (e.g. Dean Smith, Kompany) appear only on Championship pages | Labelled `appointed_outside_pl`; excluded from bounce analysis |
+
+### Reconciliation result
+
+All 175 Transfermarkt managerial changes explained; **0 unverified**.
+
+| appointment_type | Count |
+|---|---|
+| permanent (Wikipedia-verified) | 113 |
+| caretaker | 47 |
+| caretaker_made_permanent | 6 |
+| appointed_outside_pl | 9 |
+
+Wikipedia appointments with no Transfermarkt spell: 5, all explained (4 before our data starts; 1 caretaker who took no PL match).
+
+**Issue 17 update:** Heckingbottom (Sheffield United) is now labelled `caretaker_made_permanent`. His 2021 caretaker stint and his 2023/24 permanent spell remain one merged spell. This affects one spell and is noted as a limitation.

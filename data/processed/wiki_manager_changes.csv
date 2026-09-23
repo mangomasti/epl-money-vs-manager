@@ -1,0 +1,150 @@
+season,team,outgoing,departure,vacancy_date,position,incoming,incoming_is_caretaker,appointment_date,departure_type
+2014/15,West Brom,Pepe Mel,Mutual consent,2014-05-12,Pre-season,Alan Irvine,False,2014-06-14,mutual_consent
+2014/15,Tottenham,Tim Sherwood,Sacked,2014-05-13,Pre-season,Mauricio Pochettino,False,2014-05-27,sacked
+2014/15,Southampton,Mauricio Pochettino,Signed by Tottenham,2014-05-27,Pre-season,Ronald Koeman,False,2014-06-16,left_for_new_job
+2014/15,Crystal Palace,Tony Pulis,Mutual consent,2014-08-14,Pre-season,Neil Warnock,False,2014-08-27,mutual_consent
+2014/15,Crystal Palace,Neil Warnock,Sacked,2014-12-27,18th,Alan Pardew,False,2015-01-02,sacked
+2014/15,West Brom,Alan Irvine,Sacked,2014-12-29,16th,Tony Pulis,False,2015-01-01,sacked
+2014/15,Newcastle,Alan Pardew,Signed by Crystal Palace,2015-01-02,10th,John Carver,False,2015-01-26,left_for_new_job
+2014/15,QPR,Harry Redknapp,Resigned,2015-02-03,19th,Chris Ramsey,False,2015-02-12,resigned
+2014/15,Aston Villa,Paul Lambert,Sacked,2015-02-11,18th,Tim Sherwood,False,2015-02-14,sacked
+2014/15,Sunderland,Gus Poyet,Sacked,2015-03-16,17th,Dick Advocaat,False,2015-03-17,sacked
+2015/16,West Ham,Sam Allardyce,End of contract,2015-05-24,Pre-season,Slaven Bilić,False,2015-06-09,end_of_contract
+2015/16,Watford,Slaviša Jokanović,End of contract,2015-06-05,Pre-season,Quique Sánchez Flores,False,2015-06-05,end_of_contract
+2015/16,Newcastle,John Carver,Sacked,2015-06-09,Pre-season,Steve McClaren,False,2015-06-10,sacked
+2015/16,Leicester,Nigel Pearson,Sacked,2015-06-30,Pre-season,Claudio Ranieri,False,2015-07-13,sacked
+2015/16,Sunderland,Dick Advocaat,Resigned,2015-10-04,19th,Sam Allardyce,False,2015-10-09,resigned
+2015/16,Liverpool,Brendan Rodgers,Sacked,2015-10-04,10th,Jürgen Klopp,False,2015-10-08,sacked
+2015/16,Aston Villa,Tim Sherwood,Sacked,2015-10-25,19th,Rémi Garde,False,2015-11-02,sacked
+2015/16,Swansea,Garry Monk,Sacked,2015-12-09,15th,Alan Curtis,False,2016-01-07,sacked
+2015/16,Chelsea,José Mourinho,Sacked,2015-12-17,16th,Guus Hiddink,False,2015-12-19,sacked
+2015/16,Swansea,Alan Curtis,End of caretaker spell,2016-01-18,18th,Francesco Guidolin,False,2016-01-18,end_of_caretaker
+2015/16,Newcastle,Steve McClaren,Sacked,2016-03-11,19th,Rafael Benítez,False,2016-03-11,sacked
+2015/16,Aston Villa,Rémi Garde,Mutual consent,2016-03-29,20th,Eric Black,False,2016-03-29,mutual_consent
+2015/16,Everton,Roberto Martínez,Sacked,2016-05-12,12th,David Unsworth Joe Royle,True,2016-05-12,sacked
+2016/17,Man United,Louis van Gaal,Sacked,2016-05-23,Pre-season,José Mourinho,False,2016-05-27,sacked
+2016/17,Southampton,Ronald Koeman,Signed by Everton,2016-06-14,Pre-season,Claude Puel,False,2016-06-30,left_for_new_job
+2016/17,Everton,David Unsworth Joe Royle,End of caretaker spell,2016-06-14,Pre-season,Ronald Koeman,False,2016-06-14,end_of_caretaker
+2016/17,Chelsea,Guus Hiddink,End of caretaker spell,2016-06-30,Pre-season,Antonio Conte,False,2016-07-01,end_of_caretaker
+2016/17,Man City,Manuel Pellegrini,End of contract,2016-06-30,Pre-season,Pep Guardiola,False,2016-07-01,end_of_contract
+2016/17,Watford,Quique Sánchez Flores,Mutual consent,2016-06-30,Pre-season,Walter Mazzarri,False,2016-07-01,mutual_consent
+2016/17,Hull,Steve Bruce,Resigned,2016-07-22,Pre-season,Mike Phelan,False,2016-07-22,resigned
+2016/17,Sunderland,Sam Allardyce,Signed by England,2016-07-22,Pre-season,David Moyes,False,2016-07-23,left_for_new_job
+2016/17,Swansea,Francesco Guidolin,Sacked,2016-10-03,17th,Bob Bradley,False,2016-10-03,sacked
+2016/17,Crystal Palace,Alan Pardew,Sacked,2016-12-22,17th,Sam Allardyce,False,2016-12-23,sacked
+2016/17,Swansea,Bob Bradley,Sacked,2016-12-27,19th,Paul Clement,False,2017-01-02,sacked
+2016/17,Hull,Mike Phelan,Sacked,2017-01-03,20th,Marco Silva,False,2017-01-05,sacked
+2016/17,Leicester,Claudio Ranieri,Sacked,2017-02-23,17th,Craig Shakespeare,False,2017-03-12,sacked
+2016/17,Middlesbrough,Aitor Karanka,Mutual consent,2017-03-16,19th,Steve Agnew,True,2017-03-16,mutual_consent
+2017/18,Watford,Walter Mazzarri,Mutual consent,2017-05-21,Pre-season,Marco Silva,False,2017-05-27,mutual_consent
+2017/18,Crystal Palace,Sam Allardyce,Resigned,2017-05-23,Pre-season,Frank de Boer,False,2017-06-26,resigned
+2017/18,Southampton,Claude Puel,Sacked,2017-06-14,Pre-season,Mauricio Pellegrino,False,2017-06-23,sacked
+2017/18,Crystal Palace,Frank de Boer,Sacked,2017-09-11,19th,Roy Hodgson,False,2017-09-12,sacked
+2017/18,Leicester,Craig Shakespeare,Sacked,2017-10-17,18th,Claude Puel,False,2017-10-25,sacked
+2017/18,Everton,Ronald Koeman,Sacked,2017-10-23,18th,Sam Allardyce,False,2017-11-30,sacked
+2017/18,West Ham,Slaven Bilić,Sacked,2017-11-06,18th,David Moyes,False,2017-11-07,sacked
+2017/18,West Brom,Tony Pulis,Sacked,2017-11-20,17th,Alan Pardew,False,2017-11-29,sacked
+2017/18,Swansea,Paul Clement,Sacked,2017-12-20,20th,Carlos Carvalhal,False,2017-12-28,sacked
+2017/18,Stoke,Mark Hughes,Sacked,2018-01-06,18th,Paul Lambert,False,2018-01-15,sacked
+2017/18,Watford,Marco Silva,Sacked,2018-01-21,10th,Javi Gracia,False,2018-01-21,sacked
+2017/18,Southampton,Mauricio Pellegrino,Sacked,2018-03-12,17th,Mark Hughes,False,2018-03-14,sacked
+2017/18,West Brom,Alan Pardew,Mutual consent,2018-04-02,20th,Darren Moore,True,2018-04-02,mutual_consent
+2018/19,Arsenal,Arsène Wenger,Retired,2018-05-13,Pre-season,Unai Emery,False,2018-05-23,retired
+2018/19,Everton,Sam Allardyce,Sacked,2018-05-16,Pre-season,Marco Silva,False,2018-05-31,sacked
+2018/19,West Ham,David Moyes,End of contract,2018-05-16,Pre-season,Manuel Pellegrini,False,2018-05-22,end_of_contract
+2018/19,Chelsea,Antonio Conte,Sacked,2018-07-13,Pre-season,Maurizio Sarri,False,2018-07-14,sacked
+2018/19,Fulham,Slaviša Jokanović,Sacked,2018-11-14,20th,Claudio Ranieri,False,2018-11-14,sacked
+2018/19,Southampton,Mark Hughes,Sacked,2018-12-03,18th,Ralph Hasenhüttl,False,2018-12-05,sacked
+2018/19,Man United,José Mourinho,Sacked,2018-12-18,6th,Ole Gunnar Solskjær,False,2018-12-19,sacked
+2018/19,Huddersfield,David Wagner,Mutual consent,2019-01-14,20th,Jan Siewert,False,2019-01-21,mutual_consent
+2018/19,Leicester,Claude Puel,Sacked,2019-02-24,12th,Brendan Rodgers,False,2019-02-26,sacked
+2018/19,Fulham,Claudio Ranieri,Sacked,2019-02-28,19th,Scott Parker,False,2019-02-28,sacked
+2019/20,Brighton,Chris Hughton,Sacked,2019-05-13,Pre-season,Graham Potter,False,2019-05-20,sacked
+2019/20,Chelsea,Maurizio Sarri,Signed by Juventus,2019-06-16,Pre-season,Frank Lampard,False,2019-07-04,left_for_new_job
+2019/20,Newcastle,Rafael Benítez,End of contract,2019-06-30,Pre-season,Steve Bruce,False,2019-07-17,end_of_contract
+2019/20,Watford,Javi Gracia,Sacked,2019-09-07,20th,Quique Sánchez Flores,False,2019-09-07,sacked
+2019/20,Tottenham,Mauricio Pochettino,Sacked,2019-11-19,14th,José Mourinho,False,2019-11-20,sacked
+2019/20,Arsenal,Unai Emery,Sacked,2019-11-29,8th,Mikel Arteta,False,2019-12-20,sacked
+2019/20,Watford,Quique Sánchez Flores,Sacked,2019-12-01,20th,Nigel Pearson,False,2019-12-06,sacked
+2019/20,Everton,Marco Silva,Sacked,2019-12-05,18th,Carlo Ancelotti,False,2019-12-21,sacked
+2019/20,West Ham,Manuel Pellegrini,Sacked,2019-12-28,17th,David Moyes,False,2019-12-29,sacked
+2019/20,Watford,Nigel Pearson,Sacked,2020-07-19,17th,Hayden Mullins,True,2020-07-19,sacked
+2020/21,West Brom,Slaven Bilić,Sacked,2020-12-16,19th,Sam Allardyce,False,2020-12-16,sacked
+2020/21,Chelsea,Frank Lampard,Sacked,2021-01-25,9th,Thomas Tuchel,False,2021-01-26,sacked
+2020/21,Sheffield United,Chris Wilder,Sacked,2021-03-13,20th,Paul Heckingbottom,True,2021-03-13,sacked
+2020/21,Tottenham,José Mourinho,Sacked,2021-04-19,7th,Ryan Mason,True,2021-04-19,sacked
+2021/22,Crystal Palace,Roy Hodgson,End of contract,2021-05-24,Pre-season,Patrick Vieira,False,2021-07-04,end_of_contract
+2021/22,Wolves,Nuno Espírito Santo,Mutual consent,2021-05-24,Pre-season,Bruno Lage,False,2021-06-09,mutual_consent
+2021/22,Everton,Carlo Ancelotti,Signed by Real Madrid,2021-06-01,Pre-season,Rafael Benítez,False,2021-06-30,left_for_new_job
+2021/22,Tottenham,Ryan Mason,End of caretaker spell,2021-06-30,Pre-season,Nuno Espírito Santo,False,2021-06-30,end_of_caretaker
+2021/22,Watford,Xisco Muñoz,Sacked,2021-10-03,14th,Claudio Ranieri,False,2021-10-04,sacked
+2021/22,Newcastle,Steve Bruce,Mutual consent,2021-10-20,19th,Graeme Jones,True,2021-10-20,mutual_consent
+2021/22,Tottenham,Nuno Espírito Santo,Sacked,2021-11-01,8th,Antonio Conte,False,2021-11-02,sacked
+2021/22,Norwich,Daniel Farke,Sacked,2021-11-06,20th,Dean Smith,False,2021-11-15,sacked
+2021/22,Aston Villa,Dean Smith,Sacked,2021-11-07,15th,Steven Gerrard,False,2021-11-11,sacked
+2021/22,Newcastle,Graeme Jones,End of interim spell,2021-11-08,19th,Eddie Howe,False,2021-11-08,end_of_caretaker
+2021/22,Man United,Ole Gunnar Solskjær,Sacked,2021-11-21,7th,Michael Carrick,True,2021-11-21,sacked
+2021/22,Man United,Michael Carrick,End of caretaker spell,2021-12-02,7th,Ralf Rangnick,True,2021-12-03,end_of_caretaker
+2021/22,Everton,Rafael Benítez,Sacked,2022-01-16,15th,Duncan Ferguson,True,2022-01-18,sacked
+2021/22,Watford,Claudio Ranieri,Sacked,2022-01-24,19th,Roy Hodgson,False,2022-01-25,sacked
+2021/22,Everton,Duncan Ferguson,End of caretaker spell,2022-01-31,16th,Frank Lampard,False,2022-01-31,end_of_caretaker
+2021/22,Leeds,Marcelo Bielsa,Sacked,2022-02-27,16th,Jesse Marsch,False,2022-02-28,sacked
+2021/22,Burnley,Sean Dyche,Sacked,2022-04-15,18th,Mike Jackson,True,2022-04-15,sacked
+2022/23,Man United,Ralf Rangnick,End of interim spell,2022-05-22,Pre-season,Erik ten Hag,False,2022-05-23,end_of_caretaker
+2022/23,Bournemouth,Scott Parker,Sacked,2022-08-30,17th,Gary O'Neil,False,2022-08-30,sacked
+2022/23,Chelsea,Thomas Tuchel,Sacked,2022-09-07,6th,Graham Potter,False,2022-09-08,sacked
+2022/23,Brighton,Graham Potter,Signed by Chelsea,2022-09-08,4th,Roberto De Zerbi,False,2022-09-18,left_for_new_job
+2022/23,Wolves,Bruno Lage,Sacked,2022-10-02,18th,Steve Davis,True,2022-10-02,sacked
+2022/23,Aston Villa,Steven Gerrard,Sacked,2022-10-20,17th,Aaron Danks,True,2022-10-21,sacked
+2022/23,Aston Villa,Aaron Danks,End of interim spell,2022-11-01,16th,Unai Emery,False,2022-11-01,end_of_caretaker
+2022/23,Southampton,Ralph Hasenhüttl,Sacked,2022-11-07,18th,Nathan Jones,False,2022-11-10,sacked
+2022/23,Wolves,Steve Davis,End of interim spell,2022-11-14,20th,Julen Lopetegui,False,2022-11-14,end_of_caretaker
+2022/23,Everton,Frank Lampard,Sacked,2023-01-23,19th,Sean Dyche,False,2023-01-30,sacked
+2022/23,Leeds,Jesse Marsch,Sacked,2023-02-06,17th,Michael Skubala,True,2023-02-06,sacked
+2022/23,Southampton,Nathan Jones,Sacked,2023-02-12,20th,Rubén Sellés,False,2023-02-12,sacked
+2022/23,Leeds,Michael Skubala,End of interim spell,2023-02-21,19th,Javi Gracia,False,2023-02-21,end_of_caretaker
+2022/23,Crystal Palace,Patrick Vieira,Sacked,2023-03-17,12th,Paddy McCarthy,True,2023-03-17,sacked
+2022/23,Crystal Palace,Paddy McCarthy,End of interim spell,2023-03-21,12th,Roy Hodgson,True,2023-03-21,end_of_caretaker
+2022/23,Tottenham,Antonio Conte,Mutual consent,2023-03-26,4th,Cristian Stellini,True,2023-03-26,mutual_consent
+2022/23,Leicester,Brendan Rodgers,Mutual consent,2023-04-02,19th,Adam Sadler,True,2023-04-04,mutual_consent
+2022/23,Chelsea,Graham Potter,Sacked,2023-04-02,11th,Bruno Saltor,True,2023-04-02,sacked
+2022/23,Chelsea,Bruno Saltor,End of interim spell,2023-04-06,11th,Frank Lampard,True,2023-04-06,end_of_caretaker
+2022/23,Leicester,Adam Sadler,End of interim spell,2023-04-10,19th,Dean Smith,False,2023-04-10,end_of_caretaker
+2022/23,Tottenham,Cristian Stellini (interim),Sacked,2023-04-24,5th,Ryan Mason,True,2023-04-24,sacked
+2022/23,Leeds,Javi Gracia,Sacked,2023-05-03,17th,Sam Allardyce,False,2023-05-03,sacked
+2023/24,Chelsea,Frank Lampard,End of interim spell,2023-05-28,Pre-season,Mauricio Pochettino,False,2023-05-29,end_of_caretaker
+2023/24,Tottenham,Ryan Mason,End of interim spell,2023-05-28,Pre-season,Ange Postecoglou,False,2023-06-06,end_of_caretaker
+2023/24,Bournemouth,Gary O'Neil,Sacked,2023-06-19,Pre-season,Andoni Iraola,False,2023-06-19,sacked
+2023/24,Wolves,Julen Lopetegui,Mutual consent,2023-08-08,Pre-season,Gary O'Neil,False,2023-08-09,mutual_consent
+2023/24,Sheffield United,Paul Heckingbottom,Sacked,2023-12-05,20th,Chris Wilder,False,2023-12-05,sacked
+2023/24,Nott'm Forest,Steve Cooper,Sacked,2023-12-19,17th,Nuno Espírito Santo,False,2023-12-20,sacked
+2023/24,Crystal Palace,Roy Hodgson,Resigned,2024-02-19,16th,Oliver Glasner,False,2024-02-19,resigned
+2024/25,Brighton,Roberto De Zerbi,Mutual consent,2024-05-19,Pre-season,Fabian Hürzeler,False,2024-06-15,mutual_consent
+2024/25,Liverpool,Jürgen Klopp,Resigned,2024-05-19,Pre-season,Arne Slot,False,2024-06-01,resigned
+2024/25,West Ham,David Moyes,End of contract,2024-05-19,Pre-season,Julen Lopetegui,False,2024-07-01,end_of_contract
+2024/25,Chelsea,Mauricio Pochettino,Mutual consent,2024-05-21,Pre-season,Enzo Maresca,False,2024-06-03,mutual_consent
+2024/25,Leicester,Enzo Maresca,Signed by Chelsea,2024-06-03,Pre-season,Steve Cooper,False,2024-06-20,left_for_new_job
+2024/25,Man United,Erik ten Hag,Sacked,2024-10-28,14th,Ruud van Nistelrooy,True,2024-10-28,sacked
+2024/25,Man United,Ruud van Nistelrooy,End of interim spell,2024-11-11,13th,Ruben Amorim,False,2024-11-11,end_of_caretaker
+2024/25,Leicester,Steve Cooper,Sacked,2024-11-24,16th,Ben Dawson,True,2024-11-24,sacked
+2024/25,Leicester,Ben Dawson,End of interim spell,2024-12-01,16th,Ruud van Nistelrooy,False,2024-12-01,end_of_caretaker
+2024/25,Wolves,Gary O'Neil,Sacked,2024-12-15,19th,Vítor Pereira,False,2024-12-19,sacked
+2024/25,Southampton,Russell Martin,Sacked,2024-12-15,20th,Simon Rusk,True,2024-12-15,sacked
+2024/25,Southampton,Simon Rusk,End of interim spell,2024-12-22,20th,Ivan Jurić,False,2024-12-22,end_of_caretaker
+2024/25,West Ham,Julen Lopetegui,Sacked,2025-01-08,14th,Graham Potter,False,2025-01-09,sacked
+2024/25,Everton,Sean Dyche,Sacked,2025-01-09,16th,Leighton Baines,True,2025-01-09,sacked
+2024/25,Everton,Leighton Baines,End of interim spell,2025-01-11,16th,David Moyes,False,2025-01-11,end_of_caretaker
+2024/25,Southampton,Ivan Jurić,Mutual consent,2025-04-07,20th,Simon Rusk,True,2025-04-07,mutual_consent
+2025/26,Tottenham,Ange Postecoglou,Sacked,2025-06-06,Pre-season,Thomas Frank,False,2025-06-12,sacked
+2025/26,Brentford,Thomas Frank,Signed by Tottenham Hotspur,2025-06-12,Pre-season,Keith Andrews,False,2025-06-27,left_for_new_job
+2025/26,Nott'm Forest,Nuno Espírito Santo,Sacked,2025-09-08,10th,Ange Postecoglou,False,2025-09-09,sacked
+2025/26,West Ham,Graham Potter,Sacked,2025-09-27,19th,Nuno Espírito Santo,False,2025-09-27,sacked
+2025/26,Nott'm Forest,Ange Postecoglou,Sacked,2025-10-18,18th,Sean Dyche,False,2025-10-21,sacked
+2025/26,Wolves,Vítor Pereira,Sacked,2025-11-02,20th,Rob Edwards,False,2025-11-12,sacked
+2025/26,Chelsea,Enzo Maresca,Resigned,2026-01-01,5th,Liam Rosenior,False,2026-01-08,resigned
+2025/26,Man United,Ruben Amorim,Sacked,2026-01-05,6th,Michael Carrick,False,2026-01-13,sacked
+2025/26,Tottenham,Thomas Frank,Sacked,2026-02-11,16th,Igor Tudor,False,2026-02-14,sacked
+2025/26,Nott'm Forest,Sean Dyche,Sacked,2026-02-12,17th,Vítor Pereira,False,2026-02-15,sacked
+2025/26,Tottenham,Igor Tudor,Mutual consent,2026-03-29,17th,Roberto De Zerbi,False,2026-03-31,mutual_consent
+2025/26,Chelsea,Liam Rosenior,Sacked,2026-04-22,7th,Calum McFarlane,True,2026-04-22,sacked
+2025/26,Burnley,Scott Parker,Mutual consent,2026-04-30,19th,Mike Jackson,True,2026-04-30,mutual_consent
