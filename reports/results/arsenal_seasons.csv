@@ -1,0 +1,12 @@
+season,managers,points,d_points,expected_d_points,beat_model_by,xgd_pg,spend_eur_m,spend_rel,new_manager
+2015/16,Arsène Wenger,71,-4,-7.49,3.49,1.04,0.0,0.0,0
+2016/17,Arsène Wenger,75,4,1.16,2.84,0.43,72.0,1.37,0
+2017/18,Arsène Wenger,63,-12,-13.09,1.09,0.62,53.0,0.78,0
+2018/19,Unai Emery,70,7,5.73,1.27,0.2,78.0,1.22,1
+2019/20,Unai Emery -> Freddie Ljungberg -> Mikel Arteta,56,-14,-10.05,-3.95,-0.17,144.0,1.99,0
+2020/21,Mikel Arteta,61,5,-7.38,12.38,0.24,34.0,0.59,0
+2021/22,Mikel Arteta,69,8,-0.63,8.63,0.39,166.0,2.6,0
+2022/23,Mikel Arteta,84,15,-7.95,22.95,0.82,132.0,1.15,0
+2023/24,Mikel Arteta,89,5,-12.38,17.38,1.38,232.0,1.66,0
+2024/25,Mikel Arteta,74,-15,-9.29,-5.71,0.88,108.0,0.92,0
+2025/26,Mikel Arteta,85,11,-3.2,14.2,1.17,295.0,1.66,0

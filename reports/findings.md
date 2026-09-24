@@ -74,3 +74,24 @@ The **size** of the effect is stable across checks; its **significance** is not.
 - **Gross, not net, spending:** outgoing sales aren't in the data, so replacing a sold star looks like new investment.
 - **Different methods:** Q1 is an event study, Q2/Q3 a season-level regression. The summer vs. mid-season contrast is suggestive, not a controlled comparison.
 - **Small samples:** 35 summer manager changes; borderline p-values should be read as evidence, not proof.
+## Case study: Arsenal
+
+![Arsenal case study](figures/arsenal_case_study.png)
+
+**The Arteta years beat the league-wide model by about 70 points over six seasons (~+12 per season).**
+
+The Q2/Q3 model predicts each club-season's points change from last season's points and xG, summer spending and a new manager. Arsenal compared with that prediction:
+
+| Era | Seasons | Beat the model by |
+|---|---|---|
+| Wenger (final seasons) | 2015/16–2017/18 | +3.5, +2.8, +1.1 |
+| Emery | 2018/19 | +1.3 |
+| Emery → Ljungberg → Arteta | 2019/20 | −4.0 |
+| **Arteta** | 2020/21–2025/26 | **+12.4, +8.6, +23.0, +17.4, −5.7, +14.2** |
+
+- **Arsenal kept defying regression to the mean.** After strong seasons the model expected declines (e.g. −12 after 84 points in 2022/23); Arsenal improved instead in five of six seasons.
+- **The improvement was gradual, not a bounce.** Rolling form fell to 0.5 points per game in December 2020, a year into Arteta's reign. Underlying performance then built season by season: xG difference per game **−0.17 → 0.24 → 0.39 → 0.82 → 1.38** (2019/20 to 2023/24). This fits Q1 (no instant bounce) and Q3 (improvement built through summers).
+- **Money alone didn't do it:** 2019/20's €144m summer (2× the league average) was followed by a 14-point drop. 2022/23, the biggest over-performance (+23), came on a near-average budget (1.15×).
+- **The Ljungberg change** came at 1.2 points per game (not the 0.78 crisis level typical of sackings), and the next 10 games were slightly worse than matched controls (−0.26 PPG).
+
+**Caveats:** the model treats all clubs alike; elite clubs may regress less than average, which would make its expectations for Arsenal too pessimistic. Arsenal's 2015/16 spending is understated (data-quality issue 23).

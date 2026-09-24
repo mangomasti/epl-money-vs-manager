@@ -29,7 +29,8 @@ BUILD_STEPS = [
     ("Reconcile managers with Wikipedia",      "src/clean/reconcile_managers.py"),
     ("Build SQLite database",                  "src/load/build_database.py"),
     ("Manager bounce analysis",                "src/analysis/manager_bounce.py"),
-    ("Transfer spending analysis",             "src/analysis/spending_effect.py"),]
+    ("Transfer spending analysis",             "src/analysis/spending_effect.py"),
+    ("Arsenal case study",                     "src/analysis/arsenal_case_study.py"),]
 
 
 def run(steps: list) -> None:
