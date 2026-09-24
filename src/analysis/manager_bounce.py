@@ -187,7 +187,14 @@ def main() -> None:
     unmatched = events["n_controls"] == 0
     events, ctrl_paths = events[~unmatched], ctrl_paths[~unmatched]
     treated_paths = paths(panel, events)
-
+    long_paths = (pd.concat([treated_paths.assign(group="Changed manager"),
+                             ctrl_paths.assign(group="Matched controls (kept manager)")])
+                    .rename_axis("event_idx").reset_index()
+                    .melt(id_vars=["event_idx", "group"],
+                          var_name="relative_match", value_name="points"))
+    long_paths = long_paths.merge(events[["team", "season", "manager", "appointment_type"]],
+                                  left_on="event_idx", right_index=True)
+    long_paths.to_csv(RESULTS / "bounce_paths.csv", index=False)    
     all_changes = spells[(spells["change_timing"] == "mid_season") &
                          spells["appointment_type"].isin(TYPES)]
     print(f"Events used: {len(events)} of {len(all_changes)} mid-season changes "

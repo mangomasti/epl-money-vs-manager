@@ -30,7 +30,8 @@ BUILD_STEPS = [
     ("Build SQLite database",                  "src/load/build_database.py"),
     ("Manager bounce analysis",                "src/analysis/manager_bounce.py"),
     ("Transfer spending analysis",             "src/analysis/spending_effect.py"),
-    ("Arsenal case study",                     "src/analysis/arsenal_case_study.py"),]
+    ("Arsenal case study",                     "src/analysis/arsenal_case_study.py"),
+    ("Export Tableau CSVs",                    "src/load/export_tableau.py"),]
 
 
 def run(steps: list) -> None:
