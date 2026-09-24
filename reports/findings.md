@@ -35,3 +35,42 @@ Event study with matched controls (`src/analysis/manager_bounce.py`):
 - Control windows overlap (the same team in neighbouring weeks), so the confidence intervals are somewhat too narrow.
 - Sacked teams' last 2 matches before the change were worse than their controls' (≈0.3 vs ≈0.5 PPG). If anything, this makes the estimated effect **too large**.
 - Observational data: clubs choose *when* to sack, so no method fully removes that choice.
+
+## Q2: Does summer transfer spending buy points?
+
+**A little, with diminishing returns. The effect is consistently positive but statistically fragile.**
+
+![Spending chart](figures/spending_effect.png)
+
+Regression over 187 club-seasons (2015/16–2025/26; promoted clubs excluded). The outcome is the change in points vs. the previous season, controlling for last season's points and xG difference (`src/analysis/spending_effect.py`).
+
+- **Regression to the mean dominates:** each extra point last season predicts 0.83 fewer points of improvement this season (95% CI −1.06 to −0.60).
+- **Spending one extra league-average summer** (€152m in 2023/24) is linked to about **+2.2 to +2.7 points**, roughly one extra win.
+- **Diminishing returns:** with log spending, going from zero to the league average is worth about +3.8 points; from average to double, about +2.2 more.
+- **Underlying performance improves too:** +0.10 xG difference per game (p = 0.003).
+- **The biggest spenders are hit-and-miss:** of the five biggest relative spending summers, one produced +22 points (Man City 2017/18) and one −13 (Man City 2015/16).
+
+| Robustness check | Spending effect | 95% CI | p |
+|---|---|---|---|
+| Main model (with new manager) | +2.2 pts | −0.0 to +4.4 | 0.052 |
+| Log spending | positive | +0.3 to +10.5 (per log unit) | 0.037 |
+| Top 5% of spenders removed | +2.4 pts | −0.9 to +5.7 | 0.152 |
+
+The **size** of the effect is stable across checks; its **significance** is not.
+
+## Q3: Money vs. manager
+
+| Decision | Effect on points | Evidence |
+|---|---|---|
+| **Mid-season manager change** | ≈ 0 (+0.06 PPG, CI includes 0) | 61 events, matched controls |
+| **Summer manager change** | **≈ +5 points** (CI +0.6 to +9.5) | 35 changes; stable across all checks, p 0.03–0.05 |
+| **Summer spending (+1 league-average summer)** | ≈ +2–3 points | 187 club-seasons; stable size, fragile significance |
+
+**Timing seems to matter more than the decision itself.** A manager appointed in summer, with a pre-season and a transfer window to shape the squad, is linked to about twice the points of an extra league-average transfer budget. A mid-season sacking shows no reliable effect beyond regression to the mean.
+
+### Limitations
+
+- **Correlation, not causation:** clubs that spend or change manager may differ in ways the model doesn't capture (new owners, ambition, injuries).
+- **Gross, not net, spending:** outgoing sales aren't in the data, so replacing a sold star looks like new investment.
+- **Different methods:** Q1 is an event study, Q2/Q3 a season-level regression. The summer vs. mid-season contrast is suggestive, not a controlled comparison.
+- **Small samples:** 35 summer manager changes; borderline p-values should be read as evidence, not proof.
