@@ -65,14 +65,17 @@ def main() -> None:
 
     # 3. One row per club-season, with the model's expectation
     cs = build_club_seasons(con)
+    baseline, _ = fit("d_points ~ points_prev + xgd_prev", cs, "baseline")
+    cs["d_points_adjusted"] = (cs["d_points"] - baseline.predict(cs)).round(1)    
     model, _ = fit(MODEL, cs, "tableau")
     cs["expected_d_points"] = model.predict(cs).round(1)
     cs["beat_model_by"] = (cs["d_points"] - cs["expected_d_points"]).round(1)
     cs["spend_eur_m"] = (cs["spend_eur"] / 1e6).round(1)
     cs["new_manager"] = cs["new_manager"].map({1: "Yes", 0: "No"})
-    cs = cs[["season", "team", "points", "points_prev", "d_points", "expected_d_points",
-             "beat_model_by", "spend_eur_m", "spend_rel", "signings", "paid_signings",
-             "new_manager", "xgd_pg"]].round({"spend_rel": 2, "xgd_pg": 2})
+    cs = cs[["season", "team", "points", "points_prev", "d_points", "d_points_adjusted",
+             "expected_d_points", "beat_model_by", "spend_eur_m", "spend_rel", "signings",
+             "paid_signings", "new_manager", "xgd_pg"]].round({"spend_rel": 2, "xgd_pg": 2})
+    
     con.close()
 
     outputs = {"team_matches.csv": tm, "manager_spells.csv": spells, "club_seasons.csv": cs}

@@ -10,7 +10,15 @@ This project builds a multi-source dataset of every Premier League match, transf
 3. Which effect is bigger, and which lasts longer?
 4. **Case study:** Arsenal, from Wenger to Emery to Arteta.
 
-> 🚧 **Status:** data pipeline complete; analysis in progress.
+## 📊 [Interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/karan.goyal4817/viz/MoneyvsManager/MoneyvsManager)
+
+## Key findings
+
+- **The "new manager bounce" is mostly an illusion.** Teams in the same bad form that kept their manager recovered almost as much. About 86% of the bounce is regression to the mean.
+- **Summer decisions matter more than mid-season ones.** A new manager hired in the summer is linked to about +5 points; summer spending to about +2–3 points per league-average budget, with diminishing returns.
+- **Arsenal under Arteta beat the league-wide model by about 70 points over six seasons.** The improvement was gradual, not a bounce.
+
+Full write-up: [`reports/findings.md`](reports/findings.md)
 
 ## Data
 
